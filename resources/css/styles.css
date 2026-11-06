@@ -124,7 +124,11 @@ a { text-decoration: none; }
 }
 
 .panel-accent {
-  border-left: 3px solid var(--accent-strong);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.panel-accent .accent-label {
+  color: var(--accent);
 }
 
 /* ===== Work cards (home page teaser) ===== */
@@ -146,6 +150,31 @@ a { text-decoration: none; }
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 0.5rem;
+}
+
+.pill-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text) !important;
+  background-color: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.pill-link:hover {
+  border-color: var(--accent-strong);
+  color: var(--accent) !important;
 }
 
 .tech-tags {
