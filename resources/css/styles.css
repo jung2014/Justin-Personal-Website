@@ -101,6 +101,27 @@ a { text-decoration: none; }
   line-height: 1.1;
 }
 
+.type-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.9em;
+  margin-left: 4px;
+  background: var(--accent);
+  vertical-align: text-bottom;
+}
+
+.type-cursor.blink {
+  animation: type-cursor-blink 1s steps(1) infinite;
+}
+
+@keyframes type-cursor-blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .type-cursor { animation: none; }
+}
+
 .hero p.lead {
   color: var(--text-muted);
   max-width: 48ch;
