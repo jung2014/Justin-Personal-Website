@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,7 +34,7 @@
         </ul>
         <!-- Resume Icon as Download -->
         <span class="navbar-text">
-          <a href="resources/Justin_Resume_2:19:2026.pdf" download="Justin_Resume.pdf" class="text-dark" title="Download Resume">
+          <a href="resources/Justin_Nguyen_Resume.pdf" download="Justin_Nguyen_Resume.pdf" class="text-dark" title="Download Resume">
             <i class="fas fa-file-alt fa-lg"></i>
           </a>
         </span>
@@ -65,19 +65,20 @@
       <div class="row">
         <div class="col-md-6">
           <ul>
-            <li>Data Structures & Algorithms</li>
+            <li>Data Structures</li>
             <li>Computer Systems</li>
-            <li>Discrete Structures</li>
             <li>Database Systems</li>
             <li>Software Development Methods</li>
+            <li>Object-Oriented Analysis and Design</li>
           </ul>
         </div>
         <div class="col-md-6">
           <ul>
-            <li>Object-Oriented Analysis and Design</li>
             <li>Algorithms</li>
             <li>Principles of Programming Languages</li>
-            <li>Linear Algebra with Computer Science Applications</li>
+            <li>Intro to Cybersecurity</li>
+            <li>Intro to Robotics</li>
+            <li>Generative AI</li>
           </ul>
         </div>
       </div>
@@ -87,34 +88,54 @@
     <section class="mb-5">
       <h4 class="fw-bold border-bottom pb-2">Technical Skills</h4>
       <ul>
-        <li><strong>Languages:</strong> Python, Java, C++, JavaScript, SQL, HTML, CSS</li>
-        <li><strong>Frameworks/Libraries:</strong> Node.js, Bootstrap</li>
-        <li><strong>Tools:</strong> Git, GitHub, VS Code, Docker, Postman, Cursor, GitHub Copilot, ChatGPT, DeepSeek, Perplexity, Jupyter Notebook</li>
-        <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
-        <li><strong>Other Skills:</strong> RESTful APIs (JSON/HTTP)</li>
+        <li><strong>Languages:</strong> TypeScript, Python, Java, C++, JavaScript, SQL, HTML, CSS</li>
+        <li><strong>Frameworks/Libraries:</strong> Node.js, Express, Hono, Bootstrap</li>
+        <li><strong>Cloud/Tools:</strong> Claude Code, Cursor, Google Cloud Run, Git, GitHub, GitHub Actions, VS Code, Docker, Postman</li>
+        <li><strong>Databases:</strong> PostgreSQL (Row-Level Security), MySQL</li>
+        <li><strong>Other Skills:</strong> RESTful APIs, GraphQL, Multi-Tenant Data Isolation, PII-Sanitization Pipelines, Harness Engineering</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="mb-5">
+      <h4 class="fw-bold border-bottom pb-2">Experience</h4>
+      <p><strong>Protocol Wealth LLC</strong> — Software Engineering Contractor (Paid), Remote <em>(May 2026 – Aug 2026)</em></p>
+      <ul>
+        <li>Built 12 AI-assisted financial planning tools, a streaming chat interface, a digital-asset wallet connector, and a portfolio risk view for a TypeScript wealth-management platform (Hono, Google Cloud Run).</li>
+        <li>Designed multi-tenant PostgreSQL schemas with Row-Level Security and integrated market-data and on-chain APIs, including Ethereum/Base GraphQL subgraphs.</li>
+        <li>Root-caused a protocol-level bug where a GraphQL integration silently failed behind an HTTP 200 response, then fixed the handling.</li>
+        <li>Independently added 28 unit tests and 7 upstream-error tests and wired them into CI.</li>
+      </ul>
+
+      <p><strong>Stanford Golf Camp</strong> — Camp Counselor, Stanford, CA <em>(Jun 2025)</em></p>
+      <ul>
+        <li>Supervised 10 campers daily while enforcing safety guidelines in a high-energy environment.</li>
       </ul>
     </section>
 
     <!-- Projects -->
     <section class="mb-5">
       <h4 class="fw-bold border-bottom pb-2">Projects</h4>
-      
+
+      <p><strong>College Fantasy Football</strong> | React, TypeScript, WebSockets, FastAPI, ESPN API <em>(Jun 2026 – Present)</em></p>
+      <ul>
+        <li>Owned the frontend (2-developer team) for a full-stack fantasy football platform, building the live draft room with a WebSocket-driven board, pick grid, and real-time chat.</li>
+        <li>Built a cross-league Gameday dashboard aggregating live scores by polling ESPN's game-summary API per league, with conference filtering.</li>
+        <li><a href="https://github.com/jung2014/college-fantasy-football" target="_blank">Repository</a></li>
+      </ul>
+
+      <p><strong>InternshipTrack</strong> | Python, Playwright, FastAPI, Telegram Bot API <em>(Jun 2026)</em></p>
+      <ul>
+        <li>Built a Python scraper covering multiple company career sites to track internship updates, using Playwright for JS-rendered pages and a shared Greenhouse-API path for ATS-standard listings.</li>
+        <li>Automated the pipeline with a scheduled job (launchd) and Telegram bot alerts on new matches, plus a FastAPI web UI and a test suite for reachability and output validation.</li>
+        <li><a href="https://github.com/jung2014/internshiptrack" target="_blank">Repository</a></li>
+      </ul>
+
       <p><strong>BudgetBites</strong> | Node.js, Express, CSS, HTML, PostgreSQL, Regex, Render <em>(Nov 2025)</em></p>
       <ul>
         <li>Developed a full-stack meal planning web application to help users discover recipes and manage grocery planning efficiently.</li>
-        <li>Integrated the Spoonacular API to enable ingredient-based recipe search and retrieval of nutritional data.</li>
-        <li>Implemented a grocery list generator that aggregates ingredients across recipes, groups items by aisle, and estimates total cost.</li>
-        <li>Applied regex-based email validation and input sanitization to reduce malformed data and XSS risk.</li>
+        <li>Integrated the Spoonacular API to enable ingredient-based recipe search and a grocery list generator that aggregates ingredients, groups items by aisle, and estimates total cost.</li>
         <li><a href="https://budgetbites.onrender.com" target="_blank">Live Application</a> | <a href="https://github.com/jung2014/BudgetBites-Justin" target="_blank">Repository</a></li>
-      </ul>
-
-      <p><strong>Personal Website</strong> | HTML, CSS, Bootstrap, GitHub Pages <em>(Sep 2025)</em></p>
-      <ul>
-        <li>Designed and built a responsive personal website to showcase projects, resume, and technical interests.</li>
-        <li>Implemented semantic HTML and Bootstrap components to ensure cross-device responsiveness.</li>
-        <li>Deployed the site using GitHub Pages with organized repository structure and asset management.</li>
-        <li>Debugged deployment and styling issues to deliver a fully functional live site.</li>
-        <li><a href="https://jung2014.github.io/Justin-Personal-Website/" target="_blank">GitHub Pages Website</a> | <a href="https://github.com/jung2014/Justin-Personal-Website.git" target="_blank">Repository</a></li>
       </ul>
 
       <p><strong>Dungeon Pathfinder</strong> | C++, Data Structures, Algorithms <em>(Apr 2025)</em></p>
@@ -122,35 +143,13 @@
         <li>Built a dungeon navigation system to compute shortest paths using Dijkstra's algorithm.</li>
         <li>Implemented custom heap and hash table structures to optimize priority queue performance.</li>
         <li>Modeled dungeon layouts using adjacency lists to support efficient graph traversal.</li>
-        <li>Balanced runtime efficiency and memory usage through modular algorithm design.</li>
         <li><a href="https://github.com/jung2014/Dungeon-Game-Data-Structures-Project" target="_blank">Repository</a></li>
-      </ul>
-
-      <p><strong>Lion King Board Game</strong> | C++, OOP, File I/O <em>(Dec 2024)</em></p>
-      <ul>
-        <li>Developed a turn-based board game simulation featuring dual-path gameplay and probability-driven events.</li>
-        <li>Applied object-oriented principles including inheritance and polymorphism to manage game entities.</li>
-        <li>Implemented file I/O to persist player progress and game state across sessions.</li>
-        <li>Improved system reliability through iterative debugging and abstraction.</li>
-        <li><a href="https://github.com/jung2014/Lion-King-Board-Game" target="_blank">Repository</a></li>
-      </ul>
-    </section>
-
-    <!-- Experience -->
-    <section class="mb-5">
-      <h4 class="fw-bold border-bottom pb-2">Experience</h4>
-      <p><strong>Stanford Golf Camp</strong> — Camp Counselor, Stanford, CA <em>(Jun 2025)</em></p>
-      <ul>
-        <li>Supervised 10 campers daily while enforcing safety guidelines in a high-energy environment.</li>
-        <li>Taught golf fundamentals to improve engagement and skill development.</li>
-        <li>Collaborated with coaches to maintain consistent instruction across groups.</li>
-        <li>Adapted communication and leadership style to meet diverse camper needs.</li>
       </ul>
     </section>
 
     <!-- Download Resume Button -->
     <div class="text-center mt-4">
-      <a href="resources/Justin_Resume_2:19:2026.pdf" download="Justin_Resume_2:19:2026.pdf">
+      <a href="resources/Justin_Nguyen_Resume.pdf" download="Justin_Nguyen_Resume.pdf">
         <button class="btn btn-primary">
           <i class="fas fa-download me-2"></i> Download Resume (PDF)
         </button>
@@ -168,10 +167,10 @@
       <a href="https://www.linkedin.com/in/justin-nguyen-77810a23a" class="text-light me-3" target="_blank">
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://twitter.com/" class="text-light" target="_blank">
-        <i class="fab fa-twitter fa-2x"></i>
+      <a href="https://www.instagram.com/justinoo_nguyenn" class="text-light" target="_blank">
+        <i class="fab fa-instagram fa-2x"></i>
       </a>
-      <p class="mt-3 mb-0">&copy; 2025 Justin Nguyen</p>
+      <p class="mt-3 mb-0">&copy; 2026 Justin Nguyen</p>
     </div>
   </footer>
 
